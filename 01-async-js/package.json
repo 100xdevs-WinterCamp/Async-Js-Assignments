@@ -4,11 +4,21 @@
   "description": "This folder contains assignments related to asynchronous JavaScript.",
   "main": "index.js",
   "scripts": {
+    "test": "npx jest ./tests/",
+    "all": "npx jest ./tests/",
+    "test:easy": "npx jest ./tests/easy-",
+    "test:medium": "npx jest ./tests/medium-",
+    "test:hard": "npx jest ./tests/[1-4]-",
+    "test:easy-1": "npx jest ./tests/easy-1-counter.test.js",
+    "test:easy-2": "npx jest ./tests/easy-2-counter.test.js",
+    "test:easy-3": "npx jest ./tests/easy-3-read-from-file.test.js",
+    "test:easy-4": "npx jest ./tests/easy-4-write-to-file.test.js",
+    "test:medium-1": "npx jest ./tests/medium-1-file-cleaner.test.js",
+    "test:medium-2": "npx jest ./tests/medium-2-clock.test.js",
     "1-promisify-setTimeout": "npx jest ./tests/1-promisify-setTimeout.test.js",
     "2-sleep-completely": "npx jest ./tests/2-sleep-completely.test.js",
     "3-promise-all": "npx jest ./tests/3-promise-all.test.js",
-    "4-promise-chain": "npx jest ./tests/4-promise-chain.test.js",
-    "all": "npx jest ./tests/"
+    "4-promise-chain": "npx jest ./tests/4-promise-chain.test.js"
   },
   "keywords": [],
   "author": "",

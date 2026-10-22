@@ -39,33 +39,45 @@ You can follow the recommended order below or complete them in any sequence you 
 
 ## Running Tests
 
-### For Hard-Level Assignments
-1. Navigate to `/Javascript-Assignments/01-async-js`.
-2. Install dependencies using:
+1. Navigate to `01-async-js`:
+   ```sh
+   cd 01-async-js
+   ```
+2. Install dependencies (if not already installed):
    ```sh
    npm install
    ```
-3. Run specific tests with:
-   ```sh
-   npm run <test-name>
-   ```
-   Example:
-   ```sh
-   npm run 1-promisify-setTimeout
-   ```
-4. To execute all tests at once, run:
-   ```sh
-   npm run all
-   ```
+3. Run tests using npm scripts:
 
-### For Easy & Medium Assignments
-- There are no automated tests.
-- Manually run scripts using Node.js:
-  ```sh
-  node easy/1-counter.js
-  ```
-  (Replace `1-counter.js` with the relevant file name.)
-- Follow the same approach for medium problems.
+#### Run By Category:
+```sh
+npm run test:easy     # Run all easy tests
+npm run test:medium   # Run all medium tests
+npm run test:hard     # Run all hard tests
+npm test              # Run all tests across easy, medium, and hard
+```
+
+#### Run Specific Tests:
+- **Easy:**
+  - `npm run test:easy-1` (Counter using setInterval)
+  - `npm run test:easy-2` (Counter using setTimeout)
+  - `npm run test:easy-3` (Read from file)
+  - `npm run test:easy-4` (Write to file)
+- **Medium:**
+  - `npm run test:medium-1` (File cleaner)
+  - `npm run test:medium-2` (Clock)
+- **Hard:**
+  - `npm run 1-promisify-setTimeout`
+  - `npm run 2-sleep-completely`
+  - `npm run 3-promise-all`
+  - `npm run 4-promise-chain`
+
+### Direct Script Execution
+You can still execute any script directly with Node.js:
+```sh
+node easy/1-counter.js
+node medium/2-clock.js
+```
 
 ---
 ## Demo Video
